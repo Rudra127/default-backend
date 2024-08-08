@@ -24,7 +24,7 @@ app.use(
     credentials: true,
   })
 );
-app.use("/api/v1/users", proxy(process.env.USER_BACKEND_URL));
+app.use("/api/v1/user", proxy(process.env.USER_BACKEND_URL));
 
 // app.post(
 //   "/api/v1/serviceProvider/upload-serviceProviderProfile-img",
